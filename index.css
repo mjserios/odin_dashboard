@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
 
 }
 
@@ -18,7 +19,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 1em 1em 1em 2.5em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 20px 40px 5px rgba(0,0,0,0.3);  
 }
 
 .header img {
@@ -131,7 +132,6 @@
 .articles {
     display: grid;
     grid-template-columns: 9fr 4fr;
-    grid-template-rows: 1fr 1fr;
     grid-row: 2 / 3;
     background-color: #e2e8f0;
 }
@@ -155,11 +155,13 @@
     padding: 1em;
     border-radius: 10px;
     margin-top: 0.5em;
+    border-left: 5px solid #D45B19;
+    box-shadow: 10px 10px 10px -10px rgba(0,0,0,0.3);
 }
 
 .card-txt {
     grid-row: 1 / 2;
-    grid-column: 1 / 2;
+    grid-column: 1 / 3;
 }
 
 .card-icon {
@@ -175,25 +177,19 @@
     height: 1.5em;
 }
 
-.announce {
-    grid-row: 1 / 2;
-}
-
-.trend {
-    grid-row: 2 / 3;
-}
-
 .rightsidebar {
-    margin: 0.9em 4em 0.5em 0.5em;
+    margin: 1em 4em 0.5em 0.5em;
     display: flex;
     flex-direction: column;
+    gap: 1em;
 }
 
 .announcecard {
     background-color: white;
     padding: 0.5em 2em;
-    margin-top: 0.6em;
+    margin-top: 0.5em;
     border-radius: 10px;
+    box-shadow: 10px 10px 10px -10px rgba(0,0,0,0.3);
 }
 
 .announce-text {
@@ -205,11 +201,42 @@
     border: none;
 }
 
+.trend {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 1.5em 2em 1.5em;
+    gap: 1em;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px -10px rgba(0,0,0,0.3);
+}
+
+.contain {
+    display: flex;
+    gap: 1em;
+}
+
 .contain img {
     width: 3em;
     height: 3em;
     border-radius: 48px;
 }
+
+.articles p {
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    color: #666666;
+}
+
+.caption .handle {
+    font-size: 1em;
+    color: black;
+}
+
+.announce-text p {
+    font-size: 0.7em;
+}
+
 button {
     padding: 1em 2.5em;
     border-radius: 24px;
